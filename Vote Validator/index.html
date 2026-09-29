@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vote Validator</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="vote-card">
+
+            <!-- Header -->
+            <div class="header">
+
+                <div class="vote-icon">
+                    🗳️
+                </div>
+
+                <h1>Vote Validator</h1>
+
+                <p>Check your voting eligibility in India</p>
+
+            </div>
+
+
+            <!-- Form -->
+            <form id="voteForm">
+
+                <!-- Name -->
+                <div class="input-group">
+
+                    <label for="name">
+                        👤 Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your full name"
+                    >
+
+                </div>
+
+
+                <!-- Age -->
+                <div class="input-group">
+
+                    <label for="age">
+                        🎂 Age
+                    </label>
+
+                    <input
+                        type="number"
+                        id="age"
+                        placeholder="Enter your age"
+                        min="1"
+                        max="120"
+                    >
+
+                </div>
+
+
+                <!-- Country -->
+                <div class="input-group">
+
+                    <label for="country">
+                        🌐 Country
+                    </label>
+
+                    <select id="country">
+
+                        <option value="">Select your country</option>
+
+                        <option value="India">
+                            India
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Button -->
+                <button type="submit">
+                    Check Eligibility
+                    <span>→</span>
+                </button>
+
+            </form>
+
+
+            <!-- Result -->
+            <div id="result" class="result">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

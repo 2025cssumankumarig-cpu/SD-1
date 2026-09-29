@@ -1,0 +1,92 @@
+body{
+    background-color:aqua;
+}
+img{
+    height:100px;
+    width:100px;
+}
+/*4 types of selector
+element selector
+id selector  (use #)
+class selector  (use .)
+universal selector (use *)  */
+
+#panda{
+    height:500px;
+    width:500px;
+    border-radius: 50%;
+    border:100px solid red;
+}
+
+#div1{
+    height:100px;
+    width:100px;
+    padding:10px;
+    margin:10px;
+    background-color: black;
+    border:1px solid black;
+    border-radius: 50%;
+}
+
+#div2{
+    height:100px;
+    width:100px;
+    padding:10px;
+    margin:10px;
+    background-color: black;
+    border:1px solid black;
+    border-radius: 50%;
+}
+
+#div3{
+    height:100px;
+    width:100px;
+    padding:10px;
+    margin:10px;
+    background-color: black;
+    border:1px solid black;
+    border-radius: 50%;
+}
+
+#div1:hover{
+    background-color: red;
+    box-shadow: 0 0 25px red;
+}
+
+#div2:hover{
+    background-color: yellow;
+    box-shadow: 0 0 25px yellow;
+}
+
+#div3:hover{
+    background-color: green;
+    box-shadow: 0 0 25px green;
+}
+
+form{
+    width:350px;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-family:sans-serif;
+    gap:10px;
+    background-color: rgba(1,255,255,255);
+    backdrop-filter:blur(10px);
+}
+
+input{
+    width:80%;
+    box-sizing:border-box;
+    padding:14px 16px;
+    background-color: yellow;
+    transition:0.3s ease;
+}
+
+button{
+    padding:10px;
+    font-weight:bold;
+}
+
+
